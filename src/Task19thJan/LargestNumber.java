@@ -10,7 +10,7 @@ public class LargestNumber {
         int B = scanner.nextInt();
         int C = scanner.nextInt();
 
-        String LargestNum = (A>B)?"A":(B>C)?"B":"C";
+        int LargestNum = (A>B)?A:(B>C)?B:C;
         System.out.println("The largest number is : "+LargestNum);
         scanner.close();
 
