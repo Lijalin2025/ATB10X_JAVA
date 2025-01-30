@@ -1,6 +1,5 @@
-package Part2_29thTask;
+package Task30thJan;
 
-import java.time.Year;
 import java.util.Scanner;
 
 public class LeapYear {
