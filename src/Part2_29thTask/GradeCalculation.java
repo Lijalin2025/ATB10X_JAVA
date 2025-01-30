@@ -8,21 +8,23 @@ public class GradeCalculation {
         System.out.println("Enter your total Marks");
         int Marks = sc.nextInt();
 
-        //Grade A = >80%
-        //Grade B = >60%
-        //Grade C = >40%
-        //Grade D = fail
         if (0<Marks && Marks<=100)
         {
-           if (Marks>80)
+           if (Marks>=90)
            {
+               System.out.println("A+ Grade");
+           } else if (Marks>80) {
                System.out.println("A Grade");
-           } else if (Marks>60) {
+           } else if (Marks>70) {
                System.out.println("B Grade");
+           } else if (Marks>60) {
+               System.out.println("C grade");
+           } else if (Marks>50) {
+               System.out.println("D grade");
            } else if (Marks>40) {
-               System.out.println("C Grade");
-           }
-           else {
+               System.out.println("E Grade");
+
+           } else {
                System.out.println("Fail");
            }
         }
