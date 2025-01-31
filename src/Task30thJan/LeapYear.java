@@ -9,7 +9,11 @@ public class LeapYear {
 
         int Year = sc.nextInt();
 
-        String result = (Year%4==0)?"It's a Leap Year" : "It's not a Leap year";
-        System.out.println(result);
+        if((Year%4==0 && Year%100!=0) || (Year%400==0))
+        {
+            System.out.println("It is a Leap year");
+        }
+        else {System.out.println("It is not a Leap year");
+        }
     }
 }
